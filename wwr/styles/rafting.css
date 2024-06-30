@@ -1,0 +1,51 @@
+@import url('https://fonts.google.com/specimen/Montserrat')
+
+
+: root{
+    --primary-color: #FFFFFF;
+    --secondary-color: #7FA9C7;
+    --accent1-color: #837099;
+    --accent2-color: #445552c;
+
+    --heading-font: 'roboto_slab', serif;
+    --paragraph-font: 'montserrat', serif;
+
+    --nav-background-color: #FFFFFF;
+    --nav-link-color: #7fA9C7;
+    --nav-hover-link-color: #837099;
+    --nav-hover-background-color: #445552;
+}
+
+main {
+	max-width: 100px;
+	margin: auto;
+	font-family: Roboto;
+
+}
+
+.herodiv {
+	margin: 10px auto;
+	position: relative; 
+}
+
+.herodiv img {
+	width: 100%;
+	height: 100%;
+	object-fit: absolute;
+}
+
+h1, h2 {
+    position: absolute;
+    font-family: roboto;
+    color: #445552;
+}
+
+article {
+    position:absolute;
+}
+
+
+img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
