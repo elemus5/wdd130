@@ -1,7 +1,32 @@
 @import url('https://fonts.google.com/specimen/Montserrat')
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-: root{
+nav {
+    display: flex;
+    font-family: var(--heading-font);
+    text-decoration: none;
+    justify-content: space-around;
+}
+
+nav a {
+    display: flex;
+    padding: 0.5rem;
+    margin: -0.14rem;
+    font-family: var(--heading-font);
+    color: #fff;
+    text-decoration: none;
+}
+
+body {
+    display: block;
+}
+
+:root {
     --primary-color: #FFFFFF;
     --secondary-color: #7FA9C7;
     --accent1-color: #837099;
@@ -16,36 +41,102 @@
     --nav-hover-background-color: #445552;
 }
 
+header {
+	display: grid;
+	grid-template-columns: 200px auto;
+	align-items: center;
+    background-color: #445552;
+}
+
+header, main, footer {
+    max-width: 1280px;
+    margin: auto;
+}
+
 main {
-	max-width: 100px;
-	margin: auto;
-	font-family: Roboto;
-
+    display: block;
 }
 
-.herodiv {
-	margin: 10px auto;
-	position: relative; 
+.hero>img {
+	display: block;
+    width: 100%;
 }
 
-.herodiv img {
-	width: 100%;
-	height: 100%;
-	object-fit: absolute;
-}
-
-h1, h2 {
+.heading1 {
     position: absolute;
-    font-family: roboto;
-    color: #445552;
+    top: 250px;
+    width: 100%;
+    text-align: center;
+    color: #FFFFFF;
 }
 
 article {
-    position:absolute;
+    background-color: rgba(255, 255, 255, .35);
+    position: absolute;
+    top: 20rem;
+    right: 6re;
+    color:#FFFFFF;
 }
 
+article img{
+    float: right;
+    margin: 3rem;
+    width: 15rem;
+}
+
+article p{
+    font-size: x-large;
+    text-align: center;
+}
+
+.history {
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    gap: 2em;
+    margin: 50px 0;
+}
+
+.history p {
+    position: center;
+}
+
+.adventures {
+    margin: 50px 0;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+    justify-items: center
+}
+
+history, h2, adventures {
+    grid-column: 1 / -1;
+    justify-self: center;
+    padding: 1em 0;
+}
 
 img {
-    overflow-clip-margin: content-box;
-    overflow: clip;
+    width: 150%;
+    justify-content: space-evenly;
+}
+
+figcaption {
+    text-align: center;
+    padding: 1em 0;
+}
+
+.sociallinks {
+    display: flex;
+    gap: 1rem;
+    width: 250px;
+    height: 250px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #242321;
+    margin-top: 100px;
+    color:#FFFFFF
 }
